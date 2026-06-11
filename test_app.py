@@ -39,7 +39,7 @@ def test_home_page_has_bootstrap(client):
 
 # ============ CONTACT PAGE TESTS ============
 
-'''
+
 def test_contact_page_loads(client):
     """Test that the contact page returns status 200."""
     response = client.get("/contact")
@@ -50,4 +50,3 @@ def test_contact_page_has_form(client):
     """Test that the contact page has a form."""
     response = client.get("/contact")
     assert b"<form" in response.data
-'''

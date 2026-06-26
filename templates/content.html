@@ -1,0 +1,65 @@
+{% extends 'base.html' %} {% block title %}Home - My Flask Site{% endblock %}
+{%block content %}
+<section class="py-5">
+<h2 class="text-center mb-4">Our Math content</h2>
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+            
+            <h5 class="card-title">Stage 3 Math</h5>
+            <p class="card-text">
+                Covers the Math curriculum for Covers Years 5 and 6 (Ages 10-12).
+            </p>
+            <a href="{{ url_for('stage_3') }}" class="btn btn-primary">View Content</a>
+            <a href="{{ url_for('stage_3_questions') }}" class="btn btn-primary">Practice</a>
+        </div>
+    </div>
+</div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 mb-4 ">
+        <div class="card h-100"> 
+            <div class="card-body">           
+            <h5 class="card-title">Stage 4 Math</h5>
+
+            <p class="card-text">
+                Covers the Math curriculum for Covers Years 7 and 8 (Ages 12-14).</p>
+            <a href="{{ url_for('stage_4') }}" class="btn btn-primary">View Content</a>
+            <a href="{{ url_for('stage_4_questions') }}" class="btn btn-primary">Practice</a>
+            </div>
+        </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+            
+            <h5 class="card-title">Stage 5 Math</h5>
+            <p class="card-text">
+                Covers the Math curriculum for Covers Years 9 and 10 (Ages 14-16).
+            </p>
+            <a href="{{ url_for('stage_5') }}" class="btn btn-primary">View Content</a>
+            <a href="{{ url_for('stage_5_questions') }}" class="btn btn-primary">Practice</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-6 mb-4 ">
+        <div class="card h-100"> 
+            <div class="card-body">           
+            <h5 class="card-title">Stage 6 Math</h5>
+
+            <p class="card-text">
+                Covers the Math curriculum for Covers Years 11 and 12 (Ages 16-18).</p>
+            <a href="{{ url_for('stage_6') }}" class="btn btn-primary">View Content</a>
+            <a href="{{ url_for('stage_6_questions') }}" class="btn btn-primary">Practice</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+{% endblock %}
+</div>
+</div>

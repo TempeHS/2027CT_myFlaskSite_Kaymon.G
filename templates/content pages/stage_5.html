@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% block title %}Stage 5 Content{% endblock %} {%
+block content %}
+<section class="container py-5">
+  <h2 class="mb-2">Stage 5 Math Content</h2>
+  <p class="text-muted">
+    Years 9-10 • Equations, coordinate geometry, and trigonometry.
+  </p>
+
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5>Topics</h5>
+      <ul>
+        <li>Linear and quadratic equations</li>
+        <li>Gradient and graph interpretation</li>
+        <li>Right-angle trigonometry</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5>Worked Example</h5>
+      <p>
+        Find gradient between (2,5) and (6,13):
+        <strong>(13-5)/(6-2)=8/4=2</strong>.
+      </p>
+    </div>
+  </div>
+
+  <a href="{{ url_for('stage_5_questions') }}" class="btn btn-primary"
+    >Go to Practice</a
+  >
+</section>
+{% endblock %}

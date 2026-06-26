@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block title %}Stage 6 Practice{% endblock %} {%
+block content %}
+<section class="container py-5">
+  <h2 class="mb-3">Stage 6 Practice Questions</h2>
+  <p class="text-muted">
+    Years 11-12 • Advanced algebra, functions, and calculus.
+  </p>
+
+  <form class="mt-4">
+    <div class="card mb-3">
+      <div class="card-body">
+        <label class="form-label"
+          ><strong>1)</strong> Solve for x: 2x² - 7x + 3 = 0</label
+        >
+        <input class="form-control" type="text" placeholder="Your answer" />
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <label class="form-label"
+          ><strong>2)</strong> Differentiate: f(x) = 5x³ - 2x + 4</label
+        >
+        <input class="form-control" type="text" placeholder="Your answer" />
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <label class="form-label"
+          ><strong>3)</strong> If f(x)=x² and g(x)=x+1, find (f∘g)(x).</label
+        >
+        <input class="form-control" type="text" placeholder="Your answer" />
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary">
+      Check Answers (Coming Soon)
+    </button>
+    <a href="{{ url_for('content') }}" class="btn btn-primary"
+      >Return to Content Page</a
+    >
+  </form>
+</section>
+{% endblock %}

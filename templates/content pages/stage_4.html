@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Stage 4 Content{% endblock %}
+
+{% block content %}
+<section class="container py-5">
+  <h2 class="mb-2">Stage 4 Math Content</h2>
+  <p class="text-muted">Years 7-8 • Algebra, ratios, and linear relationships.</p>
+
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5>Topics</h5>
+      <ul>
+        <li>Expressions and simple equations</li>
+        <li>Ratios and rates</li>
+        <li>Graphing straight lines</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5>Worked Example</h5>
+      <p>Solve <strong>2y + 7 = 19</strong>: subtract 7, then divide by 2, so <strong>y = 6</strong>.</p>
+    </div>
+  </div>
+
+  <a href="{{ url_for('stage_4_questions') }}" class="btn btn-primary">Go to Practice</a>
+</section>
+{% endblock %}

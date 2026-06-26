@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block title %}Stage 3 Content{% endblock %} {%
+block content %}
+<section class="container py-5">
+  <h2 class="mb-2">Stage 3 Math Content</h2>
+  <p class="text-muted">
+    Years 5-6 • Foundations in number, fractions, and geometry.
+  </p>
+
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5>Topics</h5>
+      <ul>
+        <li>Place value and operations</li>
+        <li>Fractions, decimals, and percentages</li>
+        <li>Perimeter and area basics</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5>Worked Example</h5>
+      <p>
+        Convert <strong>3/4</strong> to decimal: <strong>3 ÷ 4 = 0.75</strong>
+      </p>
+    </div>
+  </div>
+
+  <a href="{{ url_for('stage_3_questions') }}" class="btn btn-primary"
+    >Go to Practice</a
+  >
+</section>
+{% endblock %}

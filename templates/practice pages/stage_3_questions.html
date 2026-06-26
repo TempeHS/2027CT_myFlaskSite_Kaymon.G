@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block title %}Stage 3 Practice{% endblock %} {%
+block content %}
+<section class="container py-5">
+  <h2 class="mb-3">Stage 3 Practice Questions</h2>
+  <p class="text-muted">Years 5-6 • Numbers, fractions, and basic geometry.</p>
+
+  <form class="mt-4">
+    <div class="card mb-3">
+      <div class="card-body">
+        <label class="form-label"><strong>1)</strong> What is 24 + 38?</label>
+        <input class="form-control" type="text" placeholder="Your answer" />
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <label class="form-label"
+          ><strong>2)</strong> Write 3/4 as a decimal.</label
+        >
+        <input class="form-control" type="text" placeholder="Your answer" />
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <label class="form-label"
+          ><strong>3)</strong> A rectangle has length 8 cm and width 5 cm. What
+          is its area?</label
+        >
+        <input class="form-control" type="text" placeholder="Your answer" />
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary">
+      Check Answers (Coming Soon)
+    </button>
+    <a href="{{ url_for('content') }}" class="btn btn-primary"
+      >Return to Content Page</a
+    >
+    {% endblock %}
+  </form>
+</section>

@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap");
+
 body {
   padding-top: 70px; /* Space for fixed navbar */
+  font-family: "BioRhyme", serif;
 }
 
 /* Hero Carousel Styles */
@@ -109,4 +112,9 @@ section h2 {
 .contact-form .form-label {
   font-weight: 500;
   margin-bottom: 5px;
+}
+
+.navbar-brand,
+.navbar .nav-link {
+  font-family: "Fascinate Inline", cursive;
 }

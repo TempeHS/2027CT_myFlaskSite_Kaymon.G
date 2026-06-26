@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Stage 4 Practice{% endblock %}
+
+{% block content %}
+<section class="container py-5">
+  <h2 class="mb-3">Stage 4 Practice Questions</h2>
+  <p class="text-muted">Years 7-8 • Integers, algebra, and ratio.</p>
+
+  <form class="mt-4">
+    <div class="card mb-3">
+      <div class="card-body">
+        <label class="form-label"><strong>1)</strong> Simplify: 3x + 5x - 2</label>
+        <input class="form-control" type="text" placeholder="Your answer" />
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <label class="form-label"><strong>2)</strong> Solve: 2y + 7 = 19</label>
+        <input class="form-control" type="text" placeholder="Your answer" />
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <label class="form-label"><strong>3)</strong> Divide $45 in the ratio 2:3.</label>
+        <input class="form-control" type="text" placeholder="Your answer" />
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary">Check Answers (Coming Soon)</button>
+    <a href="{{ url_for('content') }}" class="btn btn-primary">Return to Content Page</a>
+</form>
+</section>
+{% endblock %}

@@ -1,7 +1,5 @@
-{% extends "base.html" %}
-{% block title %}Stage 5 Practice{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% block title %}Stage 5 Practice{% endblock %} {%
+block content %}
 <section class="container py-5">
   <h2 class="mb-3">Stage 5 Practice Questions</h2>
   <p class="text-muted">Years 9-10 • Equations, graphs, and geometry.</p>
@@ -10,26 +8,51 @@
     <div class="card mb-3">
       <div class="card-body">
         <label class="form-label"><strong>1)</strong> Solve: 3x - 4 = 17</label>
-        <input class="form-control" type="text" placeholder="Your answer" />
+        <textarea
+          required
+          class="form-control"
+          type="text"
+          placeholder="Your answer"
+        ></textarea>
       </div>
     </div>
 
     <div class="card mb-3">
       <div class="card-body">
-        <label class="form-label"><strong>2)</strong> Find the gradient between points (2, 5) and (6, 13).</label>
-        <input class="form-control" type="text" placeholder="Your answer" />
+        <label class="form-label"
+          ><strong>2)</strong> Find the gradient between points (2, 5) and (6,
+          13).</label
+        >
+        <textarea
+          required
+          class="form-control"
+          type="text"
+          placeholder="Your answer"
+        ></textarea>
       </div>
     </div>
 
     <div class="card mb-3">
       <div class="card-body">
-        <label class="form-label"><strong>3)</strong> A right triangle has sides 6 cm and 8 cm. Find the hypotenuse.</label>
-        <input class="form-control" type="text" placeholder="Your answer" />
+        <label class="form-label"
+          ><strong>3)</strong> A right triangle has sides 6 cm and 8 cm. Find
+          the hypotenuse.</label
+        >
+        <textarea
+          required
+          class="form-control"
+          type="text"
+          placeholder="Your answer"
+        ></textarea>
       </div>
     </div>
 
-    <button type="button" class="btn btn-primary">Check Answers (Coming Soon)</button>
-    <a href="{{ url_for('content') }}" class="btn btn-primary">Return to Content Page</a>
-</form>
+    <button type="button" class="btn btn-primary">
+      Check Answers (Coming Soon)
+    </button>
+    <a href="{{ url_for('content') }}" class="btn btn-primary"
+      >Return to Content Page</a
+    >
+  </form>
 </section>
 {% endblock %}

@@ -1,76 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=BioRhyme&display=swap");
+@import url("https://googleapis.com");
 
+/* ==========================================================================
+   1. Universal Base Styling
+   ========================================================================== */
 body {
   padding-top: 70px; /* Space for fixed navbar */
   font-family: "BioRhyme", serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
-/* Hero Carousel Styles */
-/* Hero Carousel Sliding Animation */
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
+.navbar-brand,
+.navbar .nav-link {
+  font-family: "BioRhyme", cursive;
 }
 
-.carousel-item {
-  position: relative;
-  display: none;
-  float: left;
-  width: 100%;
-  margin-right: -100%;
-  backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out; /* Controls slide speed and smoothness */
+section h2 {
+  font-weight: bold;
 }
 
-.carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev {
-  display: block;
+/* ==========================================================================
+   2. AUTOMATIC SYSTEM THEME ENGINE (No JavaScript Needed)
+   ========================================================================== */
+
+/* --- SYSTEM LIGHT MODE DEFAULTS --- */
+:root {
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #000000;
+  --bs-tertiary-bg: #f8f9fa; /* Light Gray for Sections */
+  --custom-card-bg: #ffffff;
+  --custom-border: #dee2e6;
 }
 
-.carousel-item-next:not(.carousel-item-start),
-.active.carousel-item-end {
-  transform: translateX(100%);
+section {
+  background-color: var(--bs-tertiary-bg);
+  color: var(--bs-body-color);
 }
 
-.carousel-item-prev:not(.carousel-item-end),
-.active.carousel-item-start {
-  transform: translateX(-100%);
+.card,
+.contact-info,
+.contact-form {
+  background-color: var(--custom-card-bg);
+  color: var(--bs-body-color);
+  border: 1px solid var(--custom-border);
 }
 
-.carousel-item img {
-  height: 500px;
-  object-fit: cover; /* Crop images to fit */
+.contact-form .form-control,
+.contact-form .form-select {
+  background-color: var(--custom-card-bg);
+  color: var(--bs-body-color);
+  border: 1px solid var(--custom-border);
 }
 
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.carousel-caption h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-/* On smaller screens */
-@media (max-width: 768px) {
-  .carousel-item img {
-    height: 300px;
+/* --- SYSTEM DARK MODE OVERRIDES --- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bs-body-bg: #000000;
+    --bs-body-color: #ffffff;
+    --bs-tertiary-bg: #000000; /* Dark Sections */
+    --custom-card-bg: #0f0f0f; /* Slight Charcoal Elevation */
+    --custom-border: #222222;
   }
 
-  .carousel-caption h2 {
-    font-size: 1.5rem;
+  /* Force UI Elements to adapt smoothly */
+  .card,
+  .contact-info,
+  .contact-form {
+    background-color: var(--custom-card-bg);
+    border-color: var(--custom-border);
+    color: var(--bs-body-color);
+  }
+
+  .contact-form .form-control,
+  .contact-form .form-select {
+    background-color: var(--custom-card-bg);
+    border-color: var(--custom-border);
+    color: var(--bs-body-color);
+  }
+
+  .contact-form .form-control:focus,
+  .contact-form .form-select:focus {
+    background-color: #151515;
   }
 }
-/* Feature Cards */
+
+/* ==========================================================================
+   3. UI Component Enhancements
+   ========================================================================== */
 .card {
   transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .card:hover {
@@ -83,15 +107,6 @@ body {
   object-fit: cover;
 }
 
-/* Section Styles */
-section {
-  background-color: #f8f9fa;
-}
-
-section h2 {
-  font-weight: bold;
-}
-/* Contact Page Styles */
 .map-container {
   border-radius: 10px;
   overflow: hidden;
@@ -104,7 +119,6 @@ section h2 {
 
 .contact-info {
   padding: 20px;
-  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -117,10 +131,9 @@ section h2 {
 .contact-info a:hover {
   text-decoration: underline;
 }
-/* Contact Form Styles */
+
 .contact-form {
   padding: 30px;
-  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -142,13 +155,79 @@ section h2 {
   font-weight: 600;
 }
 
-/* Make form labels slightly bold */
 .contact-form .form-label {
   font-weight: 500;
   margin-bottom: 5px;
 }
 
-.navbar-brand,
-.navbar .nav-link {
-  font-family: "BioRhyme", cursive;
+/* ==========================================================================
+   4. Hero Carousel Layout
+   ========================================================================== */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end {
+  transform: translateX(100%);
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start {
+  transform: translateX(-100%);
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption,
+.carousel-caption h2,
+.carousel-caption p,
+.carousel-caption span {
+  color: #ffffff !important; /* Always keeps captions readable */
+}
+
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+  .carousel-caption h2 {
+    font-size: 1.5rem;
+  }
+}
+
+body {
+  padding-top: 56px;
 }

@@ -1,10 +1,10 @@
-{% extends "base.html" %}
-{% block title %}Stage 6 Content{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% block title %}Stage 6 Content{% endblock %} {%
+block content %}
 <section class="container py-5">
   <h2 class="mb-2">Stage 6 Math Content</h2>
-  <p class="text-muted">Years 11-12 • Advanced functions, calculus, and algebra.</p>
+  <p class="text-muted">
+    Years 11-12 • Advanced functions, calculus, and algebra.
+  </p>
 
   <div class="card mb-3">
     <div class="card-body">
@@ -20,10 +20,22 @@
   <div class="card mb-3">
     <div class="card-body">
       <h5>Worked Example</h5>
-      <p>Differentiate <strong>f(x)=5x³-2x+4</strong>: <strong>f'(x)=15x²-2</strong>.</p>
+      <p>
+        Differentiate <strong>f(x)=5x³-2x+4</strong>:
+        <strong>f'(x)=15x²-2</strong>.
+      </p>
     </div>
   </div>
-
-  <a href="{{ url_for('stage_6_questions') }}" class="btn btn-primary">Go to Practice</a>
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5>Link to related websites</h5>
+      <a href="https://mathslinks.net/browse/nsw-advanced-2024" target="_blank"
+        >Maths Link Network for Stage 5 (Year 11 and 12)</a
+      >
+    </div>
+  </div>
+  <a href="{{ url_for('stage_6_questions') }}" class="btn btn-primary"
+    >Go to Practice</a
+  >
 </section>
 {% endblock %}

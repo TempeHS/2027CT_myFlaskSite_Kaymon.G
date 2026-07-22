@@ -1,6 +1,6 @@
 @import url("https://googleapis.com"); /* ========================================================================== 1. Universal Base Styling ========================================================================== */
 body {
-  padding-top: 70px; /* Space for fixed navbar */
+  padding-top: 56px; /* Space for fixed navbar */
   font-family: "BioRhyme", serif;
   background-color: var(--bs-body-bg);
   color: var(--bs-body-color);
@@ -15,56 +15,62 @@ body {
 section h2 {
   font-weight: bold;
 } /* ========================================================================== 2. AUTOMATIC SYSTEM THEME ENGINE (No JavaScript Needed) ========================================================================== */ /* --- SYSTEM LIGHT MODE DEFAULTS --- */
+/* ==========================================================================
+    2. AUTOMATIC SYSTEM THEME ENGINE (Updated to Listen to JavaScript)
+   ========================================================================== */
+
+/* Triggers when JavaScript tells Bootstrap to go into Light Mode */
+html[data-bs-theme="light"],
 :root {
-  --bs-body-bg: #ffffff;
-  --bs-body-color: #000000;
-  --bs-tertiary-bg: #f8f9fa; /* Light Gray for Sections */
-  --custom-card-bg: #ffffff;
-  --custom-border: #dee2e6;
+  --bs-body-bg: #ffffff !important;
+  --bs-body-color: #000000 !important;
+  --bs-tertiary-bg: #f8f9fa !important; /* Light Gray for Sections */
+  --custom-card-bg: #ffffff !important;
+  --custom-border: #dee2e6 !important;
 }
+
+/* Triggers when JavaScript tells Bootstrap to go into Dark Mode */
+html[data-bs-theme="dark"] {
+  --bs-body-bg: #000000 !important;
+  --bs-body-bg-rgb: 0, 0, 0 !important;
+  --bs-body-color: #ffffff !important;
+  --bs-tertiary-bg: #000000 !important; /* True Black for Sections */
+  --custom-card-bg: #0f0f0f !important; /* Charcoal Elevation */
+  --custom-border: #222222 !important;
+}
+
+/* Force layout structures to obey the background variables */
+html,
+body {
+  background-color: var(--bs-body-bg) !important;
+  color: var(--bs-body-color) !important;
+}
+
 section {
   background-color: var(--bs-tertiary-bg);
-  color: var(--bs-body-color);
 }
+
 .card,
 .contact-info,
 .contact-form {
-  background-color: var(--custom-card-bg);
-  color: var(--bs-body-color);
-  border: 1px solid var(--custom-border);
+  background-color: var(--custom-card-bg) !important;
+  color: var(--bs-body-color) !important;
+  border: 1px solid var(--custom-border) !important;
 }
+
 .contact-form .form-control,
 .contact-form .form-select {
-  background-color: var(--custom-card-bg);
-  color: var(--bs-body-color);
-  border: 1px solid var(--custom-border);
-} /* --- SYSTEM DARK MODE OVERRIDES --- */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bs-body-bg: #000000;
-    --bs-body-color: #ffffff;
-    --bs-tertiary-bg: #000000; /* Dark Sections */
-    --custom-card-bg: #0f0f0f; /* Slight Charcoal Elevation */
-    --custom-border: #222222;
-  } /* Force UI Elements to adapt smoothly */
-  .card,
-  .contact-info,
-  .contact-form {
-    background-color: var(--custom-card-bg);
-    border-color: var(--custom-border);
-    color: var(--bs-body-color);
-  }
-  .contact-form .form-control,
-  .contact-form .form-select {
-    background-color: var(--custom-card-bg);
-    border-color: var(--custom-border);
-    color: var(--bs-body-color);
-  }
-  .contact-form .form-control:focus,
-  .contact-form .form-select:focus {
-    background-color: #151515;
-  }
-} /* ========================================================================== 3. UI Component Enhancements ========================================================================== */
+  background-color: var(--custom-card-bg) !important;
+  color: var(--bs-body-color) !important;
+  border: 1px solid var(--custom-border) !important;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  background-color: var(--custom-card-bg) !important;
+  color: var(--bs-body-color) !important;
+}
+/* ========================================================================== 3. UI Component Enhancements ========================================================================== */
 .card {
   transition:
     transform 0.3s ease,
@@ -157,7 +163,7 @@ section {
 .carousel-caption {
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 .carousel-caption,
 .carousel-caption h2,
@@ -176,7 +182,4 @@ section {
   .carousel-caption h2 {
     font-size: 1.5rem;
   }
-}
-body {
-  padding-top: 56px;
 }

@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}My Flask Site{% endblock %}</title>
     <!-- 1. The Instant Auto-Theme Sync Script -->
-    <link href="https://jsdelivr.net" rel="stylesheet" />
-    <link href="https://jsdelivr.net" rel="stylesheet" />
+    <script>
+      (function () {
+        const setSystemTheme = () => {
+          const theme = window.matchMedia("(prefers-color-scheme: dark)")
+            .matches
+            ? "dark"
+            : "light";
+          document.documentElement.setAttribute("data-bs-theme", theme);
+        };
+        setSystemTheme();
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", setSystemTheme);
+      })();
+    </script>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"

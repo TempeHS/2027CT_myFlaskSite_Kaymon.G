@@ -125,7 +125,7 @@ However, the website’s total effectiveness is currently constrained by its sta
 | Bootstrap     | Bootstrap team   | MIT     | Layout and components  |
 | Flask         | Pallets Projects | BSD     | Web server and routing |
 | Images        | Magnific         | EULA    | Images and placeholders|
-|               |                  |         |                        |
+| Fonts         | Google Fonts     | OFL     | Fonts and text areas   |
 
 ---
 

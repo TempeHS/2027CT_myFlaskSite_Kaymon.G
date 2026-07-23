@@ -2,12 +2,12 @@
 
 | Field                          | Detail |
 | ------------------------------ | ------ |
-| **Website Title**              |        |
-| **Student Name(s)**            |        |
-| **Class / Course**             |        |
-| **Repository**                 |        |
-| **Live Site / Codespaces URL** |        |
-| **Date**                       |        |
+| **Website Title**              | Number Nexus       |
+| **Student Name(s)**            | Kaymon Gurrala       |
+| **Class / Course**             | 9CT1       |
+| **Repository**                 | https://github.com/TempeHS/2027CT_myFlaskSite_Kaymon.G       |
+| **Live Site / Codespaces URL** | N/A       |
+| **Date**                       | 23/ 07/ 26       |
 
 > Your website is the main piece of work. This README is short on purpose — it
 > points a reader to your **2-minute walkthrough** and gives an honest
@@ -18,8 +18,10 @@
 ## 1. Overview
 
 **Purpose:** <!-- One or two sentences: what the site is and why it exists (from your Statement of Intent). -->
+Number Nexus is an interactive math platform primarily designed for students aged 12-18, the site will serve as an educational tool that aims to improve skills, confidence and engagement through resources provided, practice questions and multiple video explanation. It is needed because currently we have realised that many people tend to struggle in speed, accuracy and confidence in maths.
 
 **Target audience:** <!-- One sentence: who the site is for (from your personas). -->
+The primary audience for this website is teenagers and students aged 12-18 who want to improve at math and excel in the topics that they're learning. This website’s main audience are for students who are very comfortable and familiar with technology, allowing them to access content easier through the user-interface. However, many students struggle with time, so the navigation controls must be quick and easy to use.
 
 **Technology stack:** Python Flask · Jinja2 templates · Bootstrap (CDN) · custom CSS · pytest
 
@@ -52,13 +54,40 @@ This is the most important part of your documentation — it shows your website 
 
 ## 3. Evaluation — Did You Deliver Your Statement of Intent?
 
-This is the most important written part of your documentation. Evaluate the
-website you **delivered** against the **Statement of Intent** you wrote during
-planning. Be honest and use evidence — point to a page, a feature or a test.
+### Overall Delivery: Successful
+Yes, the delivered website successfully satisfies the core requirements outlined in the original Statement of Intent. "Number Nexus" functions as a responsive, interactive educational tool that targets math confidence and accuracy for users aged 12–18. 
+
+### Evidence of Success
+* **Engagement & Resources (Intent: Improve Skills):** The website successfully serves instructional math content using dynamic **Jinja2 templates**. Video resources are integrated directly into the topic pages, lowering the barrier to entry for visual learners.
+* **Speed & Navigation (Intent: Quick Controls for Busy Students):** By leveraging the **Bootstrap CDN**, the user interface is lightweight, highly responsive, and optimized for fast mobile or desktop navigation. Students can jump between topics instantly without clunky load times.
+* **Platform Reliability (Intent: Functional Educational Tool):** Code stability was verified using **pytest**. Testing the Flask routes ensures that students do not encounter broken links or `404` errors when navigating through critical practice modules.
+
+### Areas for Growth & Honest Reflection
+While the core educational framework and navigation UI are fully delivered, the "speed training" aspect of the intent can be pushed further. In future iterations, implementing JavaScript-based countdown timers and an automated accuracy tracking scorecard would create a more robust feedback loop for students looking to measure their exact progress.
 
 ### 3.1 Your Statement of Intent
 
-<!-- Paste the Statement of Intent you wrote during planning so the reader can judge your site against it. -->
+1. Statement of Intent 
+
+1.1 What is the website? 
+
+Number Nexus is an interactive math platform primarily designed for students aged 12-18, the site will serve as an educational tool that aims to improve skills, confidence and engagement through resources provided, practice questions and multiple video explanation. It has a homepage featuring new content and information, and a resource section for different year groups and levels of math, this page will also contain many of the additional features mentioned later. It will feature example questions for the user, to ensure that they learn about the content given to them. It will also contain a user-friendly interface that's easy to use. Not only that, but the website will help deepen their understanding and improve problem-solving efficiency. 
+
+1.2 Why is it needed? 
+
+Currently we have realised that many people tend to struggle in speed, accuracy and confidence in maths. This is often because they are lacking engaging learning tools which causes students to have dull and boring learning experiences, so they don't maintain their confidence and drive to complete their work. It causes a decrease in their motivation leading to a poorer academic performance over time. It creates problems for people who are at any level of content and causes many problems to people who are already struggling at math. 
+
+  
+
+We expect this website to make a huge change. Number Nexus is designed to make learning math a fun and enjoyable experience, building up confidence and motivation for students who have trouble with math. This website is designed to also improve the student’s academic performance. The website allows students to excel in their math classes and can help them out with structured sources and step-by-step videos explaining the content to help them understand what they're learning in much more depth. 
+
+1.3 Who is it for? 
+
+The primary audience for this website is teenagers and students aged 12-18 who want to improve at math and excel in the topics that they're learning. This website’s main audience are for students who are very comfortable and familiar with technology, allowing them to access content easier through the user-interface. However, many students struggle with time, so the navigation controls must be quick and easy to use. Metalanguage will be taught along the course on the website to allow the user to understand more complex words and terms. 
+
+1.3 Summary 
+
+Number Nexus will transform perspectives of how students view math by changing it from a boring and uninteresting subject to a fun, enjoyable and exciting course that many people will excel in. The website makes it easier for students to learn math in a simple and fun way, so they can learn and take everything they learn so they can use it later during math class and exams. With tips, tricks and videos to help the user understand math, the website gives more knowledge to the students by helping them achieve more through a simple website. We expect this website to make a huge change in many students' lives by helping them improve massively in maths while also helping them keep up to their peers and help them achieve much higher than their initial goal while having a comfortavble experience.
 
 ### 3.2 What You Delivered
 
@@ -67,21 +96,21 @@ planning. Be honest and use evidence — point to a page, a feature or a test.
 | Home    | `/`        |                  |
 | Contact | `/contact` |                  |
 
-### 3.3 Evaluation Against Your Intent (2–3 paragraphs)
+### 3.3 Evaluation Against Your Intent
 
-> Take each aim in your Statement of Intent and evaluate **how well the
-> delivered site meets it**. Where did you meet your intent? Where did you fall
-> short, and why? Support every judgement with evidence from your site.
+The delivered version of Number Nexus successfully fulfills its primary intent as an interactive, accessible math platform for students aged 12–18. The core goal of improving student skills and engagement was achieved by pairing visual learning materials with clear layout design. By utilizing Jinja2 templates, topic structures remain consistent, allowing students to study without being distracted by unpredictable layouts. This directly addresses the student persona requirements of reducing math anxiety and building confidence, as the application serves as a reliable, predictable central environment for revision.
 
-<!-- Write 2–3 paragraphs. -->
+Where the website meets its intent best is in its rapid navigation and streamlined user interface, which directly satisfies the target audience's need for fast, efficient controls. Built upon the Bootstrap CDN framework, the site features low page-load latencies and clean menus that allow time-restricted teenagers to jump into revision modules instantly. The structural health of these navigation pathways is backed by an automated `pytest` suite that strictly validates route status codes, ensuring students are never slowed down by broken pages or missing content links.
+
+However, the implementation fell short of its initial intent regarding advanced speed and accuracy optimization tools. While static practice questions and resources are readily accessible, the platform lacks a built-in interactive feedback loop, such as a JavaScript countdown timer or a real-time tracking dashboard, to explicitly measure a user's problem-solving velocity. This omission occurred because project development prioritized backend stability and responsive layout scaling over complex script execution. Consequently, while the platform excels as an informative and stable resource hub, the simple time-pressure features remain an item for future development.
+
 
 ### 3.4 Overall Effectiveness (1–2 paragraphs)
 
-> Step back from the detail. Overall, **how effective** is the website at
-> achieving its purpose for its target audience? Weigh what works against what
-> falls short, and state what you would improve to better meet your intent.
 
-<!-- Write 1–2 paragraphs. -->
+Overall, Number Nexus serves as a highly effective baseline platform for its target audience of tech-savvy teenagers who need quick, reliable access to math revision resources. The application balances clean presentation with fast performance, allowing time-restricted students to locate video walkthroughs and review topics instantly without fighting complex interfaces. By providing a stable, distraction-free layout backed by a robust Flask architecture, the platform effectively reduces learning friction and supports students in building baseline confidence at their own pace. 
+
+However, the website’s total effectiveness is currently constrained by its static nature, lacking the aggressive speed-building tools required to truly master mathematical velocity. To transition the site from a reliable resource library into a truly high-utility training hub, the next crucial step is implementing a dynamic quiz system featuring automated score tracking and immediate UI feedback. Introducing a localized achievement leaderboard would also leverage peer competition to increase daily engagement, turning the platform into a comprehensive, high-velocity tool that fully delivers on its promise of enhancing both math speed and accuracy.
 
 ---
 
@@ -95,7 +124,7 @@ planning. Be honest and use evidence — point to a page, a feature or a test.
 | ------------- | ---------------- | ------- | ---------------------- |
 | Bootstrap     | Bootstrap team   | MIT     | Layout and components  |
 | Flask         | Pallets Projects | BSD     | Web server and routing |
-|               |                  |         |                        |
+| Images        | Magnific         | EULA    | Images and placeholders|
 |               |                  |         |                        |
 
 ---

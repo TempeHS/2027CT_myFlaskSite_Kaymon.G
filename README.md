@@ -93,8 +93,19 @@ Number Nexus will transform perspectives of how students view math by changing i
 
 | Page    | Route      | What it delivers |
 | ------- | ---------- | ---------------- |
-| Home    | `/`        |                  |
-| Contact | `/contact` |                  |
+| Home    | `/`        | A responsive homepage featuring Bootstrap components (navbar, carousel, cards), and quick navigation for students aged 12–18. It introduces the purpose of Number Nexus and links to learning resources.                 |
+| Contact | `/contact` | A contact page containing an embedded Google Map, a form, and Bootstrap layout elements. Allows users to reach out and demonstrates correct Flask routing and responsive design.                 |
+| Login | `/login` | A functional login interface built with Flask and Bootstrap. Provides a simple authentication entry point and demonstrates form handling, responsive layout, and user‑flow preparation for future personalised features.                 |
+| About Us | `/learn_more` | A detailed information page explaining the mission, purpose, and goals of Number Nexus. It expands on the site's intent, uses Bootstrap for layout, and provides students with background context about how the platform supports their learning.                 |
+| Content | `/content` | A resource hub displaying responsive Bootstrap cards containing math topics, example questions, and embedded video explanations. This page delivers the core learning materials of Number Nexus and adapts to dark mode for improved accessibility and user comfort.                 |
+| Stage 3 Math | `/stage-3` | A topic page containing Stage 3 math explanations, example questions, and embedded videos. Uses responsive cards and consistent Jinja2 templates. |
+| Stage 4 Math | `/stage-4` | A topic page delivering Stage 4 math content with structured explanations, worked examples, and visual learning resources. Includes responsive Bootstrap cards and dark mode support. |
+| Stage 5 Math | `/stage-5` | A Stage 5 learning page featuring curriculum‑aligned explanations, example problems, and embedded video walkthroughs. Designed with consistent Jinja2 templates for predictable navigation. |
+| Stage 6 Math | `/stage-6` | An advanced topic page providing higher‑level mathematical explanations, worked examples, and video demonstrations. Uses responsive cards and supports dark mode for accessibility. |
+| Stage 3 Questions | `/stage-3/questions` | A practice page containing Stage 3 questions with structured examples and Bootstrap formatting. Supports fast navigation for revision. |
+| Stage 4 Questions | `/stage-4/questions` | A question page delivering Stage 4 practice problems and revision tasks using consistent Jinja2 templates and responsive layout. |
+| Stage 5 Questions | `/stage-5/questions` | A Stage 5 question bank offering curriculum‑aligned practice questions designed to build confidence, speed, and accuracy. |
+| Stage 6 Questions | `/stage-6/questions` | An advanced question page containing higher‑level problems for Stage 6 students, formatted for clarity and efficient study flow. |
 
 ### 3.3 Evaluation Against Your Intent
 

@@ -49,6 +49,7 @@ This is the most important part of your documentation — it shows your website 
 |<img width="476" height="267" alt="Dark mode enable and disable" src="https://github.com/user-attachments/assets/95871a0e-99f1-402b-beb5-b11db2787bca" /> | Dark mode is implemented using the CSS prefers-color-scheme media query. This allows the website to detect the user’s operating system colour preference and apply the correct theme automatically. Because the theme is selected before the page renders, users experience a seamless transition with no flashing or layout shift. This approach improves accessibility, reduces eye strain, and ensures the interface feels modern and responsive across all devices.|
 |<img width="476" height="267" alt="Mobile Responsiveness" src="https://github.com/user-attachments/assets/b6fa9aab-5862-4e9b-80c0-18b6de39e2e2" /> | The layout scales smoothly to mobile, with the Bootstrap navbar collapsing into a hamburger menu for easy navigation.  |
 | <img width="476" height="267" alt="Backend Testing" src="https://github.com/user-attachments/assets/39b63942-ff41-4f4d-bf0f-0fa5f9a69ca3" /> | Automated tests confirm stable Flask routing and clean 200 responses across all pages.  |
+
 **Your walkthrough should show:**
 
 - A tour of each page (Home and Contact)

@@ -41,9 +41,14 @@ This is the most important part of your documentation — it shows your website 
 
 | Field            | Detail |
 | ---------------- | ------ |
-| **Link / Embed** |        |
-| **Duration**     |        |
-
+|<img width="476" height="267" alt="Homepage" src="https://github.com/user-attachments/assets/2fb52517-d629-4084-a27c-723f61cac3ae" /> |Hi, I'm Kaymon, and this is Number Nexus—a Flask-based web application designed to help students aged 12–18 build math speed and confidence. On the home page, students are greeted with a clean layout utilizing a mobile-responsive Bootstrap navbar and a 3-column grid system that instantly outlines how the platform tackles math anxiety.The homepage introduces Number Nexus with a clean Bootstrap layout and responsive navigation.        |
+| <img width="476" height="267" alt="contact page" src="https://github.com/user-attachments/assets/5c677d47-fcab-4b34-bcc6-74a41e5d6ce5" />   | The Contact page features an embedded Google Map and a simple enquiry form for user communication.|
+|<img width="476" height="267" alt="About Us" src="https://github.com/user-attachments/assets/66520804-cc91-428b-ba92-d5250ff97f4d" /> |The About Us page explains the purpose and goals behind the platform using structured Bootstrap containers.        |
+| <img width="476" height="267" alt="Content and Practice Pages" src="https://github.com/user-attachments/assets/106c3770-11b0-4361-b10f-0c6f35688425" /> |The Content page uses Bootstrap cards to organise math subjects clearly for fast browsing. Which links to actual learning content taht includes a responsive video player and formula tips to support quick learning. After this, the page leads you to practice questions on the topic to review your knowledge.        |
+| <img width="476" height="267" alt="Login page" src="https://github.com/user-attachments/assets/112171ce-1a00-4bb2-997c-d65e407de6c2" /> |The Login page demonstrates the authentication interface using Bootstrap form styling.        |
+|<img width="476" height="267" alt="Dark mode enable and disable" src="https://github.com/user-attachments/assets/95871a0e-99f1-402b-beb5-b11db2787bca" /> | Dark mode is implemented using the CSS prefers-color-scheme media query. This allows the website to detect the user’s operating system colour preference and apply the correct theme automatically. Because the theme is selected before the page renders, users experience a seamless transition with no flashing or layout shift. This approach improves accessibility, reduces eye strain, and ensures the interface feels modern and responsive across all devices.|
+|<img width="476" height="267" alt="Mobile Responsiveness" src="https://github.com/user-attachments/assets/b6fa9aab-5862-4e9b-80c0-18b6de39e2e2" /> | The layout scales smoothly to mobile, with the Bootstrap navbar collapsing into a hamburger menu for easy navigation.  |
+| <img width="476" height="267" alt="Backend Testing" src="https://github.com/user-attachments/assets/39b63942-ff41-4f4d-bf0f-0fa5f9a69ca3" /> | Automated tests confirm stable Flask routing and clean 200 responses across all pages.  |
 **Your walkthrough should show:**
 
 - A tour of each page (Home and Contact)
@@ -65,9 +70,9 @@ Yes, the delivered website successfully satisfies the core requirements outlined
 ### Areas for Growth & Honest Reflection
 While the core educational framework and navigation UI are fully delivered, the "speed training" aspect of the intent can be pushed further. In future iterations, implementing JavaScript-based countdown timers and an automated accuracy tracking scorecard would create a more robust feedback loop for students looking to measure their exact progress.
 
-### 3.1 Your Statement of Intent
+## 3.1 Your Statement of Intent
 
-1. Statement of Intent 
+### 1. Statement of Intent 
 
 1.1 What is the website? 
 
@@ -113,7 +118,7 @@ The delivered version of Number Nexus successfully fulfills its primary intent a
 
 Where the website meets its intent best is in its rapid navigation and streamlined user interface, which directly satisfies the target audience's need for fast, efficient controls. Built upon the Bootstrap CDN framework, the site features low page-load latencies and clean menus that allow time-restricted teenagers to jump into revision modules instantly. The structural health of these navigation pathways is backed by an automated `pytest` suite that strictly validates route status codes, ensuring students are never slowed down by broken pages or missing content links.
 
-However, the implementation fell short of its initial intent regarding advanced speed and accuracy optimization tools. While static practice questions and resources are readily accessible, the platform lacks a built-in interactive feedback loop, such as a JavaScript countdown timer or a real-time tracking dashboard, to explicitly measure a user's problem-solving velocity. This omission occurred because project development prioritized backend stability and responsive layout scaling over complex script execution. Consequently, while the platform excels as an informative and stable resource hub, the simple time-pressure features remain an item for future development.
+However, the implementation fell short of its initial intent regarding advanced speed and accuracy optimization tools. While static practice questions and resources are readily accessible, the platform lacks a built-in interactive feedback loop, such as a JavaScript countdown timer or a real-time tracking dashboard, to explicitly measure a user's problem-solving velocity. This omission occurred because project development prioritized backend stability and responsive layout scaling over complex script execution. Consequently, while the platform excels as an informative and stable resource hub, the simple time-pressure features remain an item for future development. I should've mentioned ideas of reducing strain for users through colours schemes, like dark mode, I should've mentioned this in my Statement of Intent as I have now built the skills to implement this idea, this is one thing I should've put in my Statement of Intent so the users experience will not be impacted by strain.
 
 
 ### 3.4 Overall Effectiveness (1–2 paragraphs)
@@ -137,7 +142,7 @@ However, the website’s total effectiveness is currently constrained by its sta
 | Flask         | Pallets Projects | BSD     | Web server and routing |
 | Images        | Magnific         | EULA    | Images and placeholders|
 | Fonts         | Google Fonts     | OFL     | Fonts and text areas   |
-
+|Youtube videos | Youtube          |No license| Tutorials and content |
 ---
 
 > **Student Declaration:** All work submitted is my own except where explicitly acknowledged above.

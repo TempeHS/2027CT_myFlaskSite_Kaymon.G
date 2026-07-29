@@ -144,6 +144,7 @@ However, the website’s total effectiveness is currently constrained by its sta
 | Images        | Magnific         | EULA    | Images and placeholders|
 | Fonts         | Google Fonts     | OFL     | Fonts and text areas   |
 |Youtube videos | Youtube          |No license| Tutorials and content |
+|Other website  | Mathspace        |No license| Tutorials and content |
 ---
 
 > **Student Declaration:** All work submitted is my own except where explicitly acknowledged above.

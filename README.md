@@ -7,7 +7,7 @@
 | **Class / Course**             | 9CT1       |
 | **Repository**                 | https://github.com/TempeHS/2027CT_myFlaskSite_Kaymon.G       |
 | **Live Site / Codespaces URL** | N/A       |
-| **Date**                       | 23/ 07/ 26       |
+| **Date**                       | 31/ 07/ 26       |
 
 > Your website is the main piece of work. This README is short on purpose — it
 > points a reader to your **2-minute walkthrough** and gives an honest
